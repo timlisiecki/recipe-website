@@ -1,0 +1,34 @@
+<% include ../partials/header %>
+    
+    <header class="blog">
+        <div>
+            <h1>RecipeWebApp Blog!</h1>
+            <p>New recipes, tips and tricks, and more ...</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/blogs/new">Add New Blog</a>
+            </p>
+        </div>
+        
+    </header>
+    
+    <div class="container">
+        <div class="row blog-feed col-md-8" style="dispaly:block;">
+            <% blogs.forEach(function(blog){ %>
+                <div class="media well">
+                    <div class="media-left">
+                        <img class="media-object" src="<%= blog.image %>">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><%= blog.title %></h4>
+                        <h5><em> <%= blog.subtitle %> </em></h5>
+                        <p><%= blog.content.slice(0, 200); %>...</p>
+                        <span><a href="/blog/<%= blog._id %>" class="btn btn-primary">Read On...</a></span>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+        <div class="row sidebar col-md-4">
+            <p>Filler to see how the ad space looks</p>
+        </div>
+    </div>
+<% include ../partials/footer %>

@@ -1,0 +1,284 @@
+body {
+    background: #cec41a;
+}
+
+a {
+    color: white;
+}
+
+/* Landing Page */
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 30% 0;
+}
+
+#landing-header h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.section {
+  z-index: 1;
+  background: #cec41a;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.slideshow { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://images.pexels.com/photos/59016/pexels-photo-59016.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://images.pexels.com/photos/5317/food-salad-restaurant-person.jpg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://images.pexels.com/photos/8500/food-dinner-pasta-spaghetti-8500.jpg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://images.pexels.com/photos/67431/pexels-photo-67431.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+    opacity: 1;
+}
+
+/* Topbar at for Social, Login/Register, Settigns */
+#topbar {
+    background: #c50000;
+    margin: 0;
+}
+
+#topbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-bottom: 0;
+    
+}
+
+#topbar ul li {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* Navbar*/
+.navbar-default {
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 0;
+    padding: 0;
+    background: #cec41a;
+    border-color: #cec41a;
+    border-bottom: 5px solid #c50000;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #c50000;
+    font-size: 1.2em;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 2rem;
+    color: #c50000;
+}
+
+header {
+    height: 20%;
+}
+
+.jumbotron {
+    background: url(https://static.pexels.com/photos/62097/pexels-photo-62097.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron div {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: rgba(206,196,26,0.6);
+}
+
+.showcase {
+    margin-top: 5%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+    padding-bottom: 5px;
+    border: none;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 
+                0 4px 25px 0px rgba(0, 0, 0, 0.12), 
+                0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.gallery img {
+    width: auto;
+}
+
+.form {
+    text-align: center;
+    width: 50%;
+}
+
+.form-control {
+    width: 250px;
+    margin: 10px auto 10px auto;
+}
+
+textarea.form-control {
+    height: 200px;
+}
+
+
+.navbar-form .form-control {
+    margin: 0;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+section {
+    background: white;
+    margin-top: 0;
+}
+
+#footer {
+    background: #c50000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#footer a {
+    color: white;
+}
+
+#delete-form {
+    display: inline;
+}
+/* Buttons */
+.btn {
+    color: white;
+    background-color: #c50000;
+    border-color: #c50000;
+}
+
+
+/* Blog */
+.blog { 
+    background: url(https://static.pexels.com/photos/119637/pexels-photo-119637.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.blog-feed {
+    margin-top: 5%;
+}
+
+.blog-feed .well {
+    width: 800px;
+    
+}
+
+.blog-page {
+    background: #f3f3f3;
+}
+
+.media-object {
+    height: 175px;
+    width: 175px;
+}
+
+/* Sidebar for ads*/
+.sidebar {
+  width: 330px;
+  background-color: blue;
+  float: right;
+  margin-top: 5%;
+  color: white;
+}
+
+@media screen and (min-width: 996px) {
+    .gallery img {
+        height: 200px;
+        width: auto;
+    }
+    
+    .thumbnail .caption {
+        height: 100px;
+    }
+}
